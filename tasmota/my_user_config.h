@@ -50,7 +50,7 @@
 #define PROJECT                "tasmota"         // PROJECT is used as the default topic delimiter
 
 // If not selected the default will be SONOFF_BASIC
-//#define MODULE                 SONOFF_BASIC      // [Module] Select default module from tasmota_template.h
+// #define MODULE                 SMART_PLUG      // [Module] Select default module from tasmota_template.h
 #ifdef ESP8266
 #define FALLBACK_MODULE        SONOFF_BASIC      // [Module2] Select default module on fast reboot where USER_MODULE is user template
 //#define USER_TEMPLATE "{\"NAME\":\"Generic\",\"GPIO\":[1,1,1,1,1,1,1,1,1,1,1,1,1,1],\"FLAG\":0,\"BASE\":18}"  // [Template] Set JSON template
@@ -400,7 +400,7 @@
 //#define MY_LANGUAGE            sv_SE           // Swedish in Sweden
 //#define MY_LANGUAGE            tr_TR           // Turkish in Turkey
 //#define MY_LANGUAGE            uk_UA           // Ukrainian in Ukraine
-//#define MY_LANGUAGE            vi_VN           // Vietnamese in Vietnam
+#define MY_LANGUAGE            vi_VN           // Vietnamese in Vietnam
 //#define MY_LANGUAGE            zh_CN           // Chinese (Simplified) in China
 //#define MY_LANGUAGE            zh_TW           // Chinese (Traditional) in Taiwan
 
@@ -1454,5 +1454,5 @@
   #define USE_I2S_AAC
   #define USE_I2S_OPUS
 #endif // USE_I2S_ALL
-
+#define USE_MQTT_TB_IOT
 #endif  // _MY_USER_CONFIG_H_
